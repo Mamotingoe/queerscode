@@ -1,0 +1,39 @@
+.corgi {
+  animation: run 0.8s steps(5) infinite;
+  aspect-ratio: 1;
+  display: block;
+  object-fit: cover;
+  object-position: 0 0;
+  width: 120px;
+}
+
+@keyframes run {
+  100% {
+    object-position: 0 0;
+  }
+  100% {
+    object-position: 150% 0; /* Adjust the value to control the distance it appears to run */
+  }
+}
+
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column; /* Added to stack items vertically */
+  inset: 0;
+  justify-content: center;
+  position: fixed;
+}
+
+.spacer {
+  height: 500vh;
+}
+
+.text {
+  text-align: center;
+  color: black;
+  font-size: medium;
+  margin-top: 20px; /* Adjust this margin as needed */
+  font-weight: bold;
+}
